@@ -10,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { EventListComponent } from './event-list/event-list.component';
+import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventListComponent
+    EventListComponent,
+    EventThumbnailComponent
   ],
   imports: [
     BrowserModule,
