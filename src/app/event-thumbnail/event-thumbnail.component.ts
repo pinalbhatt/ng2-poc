@@ -9,6 +9,8 @@ export class EventThumbnailComponent implements OnInit {
 
   @Input() event: any;
   @Output() eventClick = new EventEmitter();
+  x = 10;
+  someChildProp: any = 'value in child';
 
   constructor() { }
 
@@ -17,6 +19,10 @@ export class EventThumbnailComponent implements OnInit {
 
   handleClickMe() {
     this.eventClick.emit(this.event.name);
+  }
+
+  logFoo() {
+    console.log('using #Template variable to interact with child component');
   }
 
 }

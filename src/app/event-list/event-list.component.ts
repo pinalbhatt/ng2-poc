@@ -337,4 +337,5 @@ export class EventListComponent implements OnInit {
   handleEventClicked(data){
     console.log(data);
   }
+
 }
