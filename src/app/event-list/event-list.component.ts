@@ -7,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventListComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   event = {
     id: 1,
     name: 'Angular Connect',
@@ -25,5 +20,10 @@ export class EventListComponent implements OnInit {
       country: 'England'
     }
   };
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
