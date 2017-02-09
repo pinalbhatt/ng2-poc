@@ -1,14 +1,17 @@
 <md-card (click)="handleClickMe()">
-  <h2>{{event.name}}</h2>
-  <div>Date: {{event.date}}</div>
-  <div>Time: {{event.time}}</div>
-  <div>Price: {{event.price}}</div>
-  <div>
-    <span>Location: {{event.location.address}}</span>
-    <span>&nbsp;</span>
-    <span>{{event.location.city}}, {{event.location.country}}</span>
-  </div>
-  <div>
+  <md-card-title>{{event.name}}</md-card-title>
+  <md-card-content>
+    <div>Date: {{event.date}}</div>
+    <div>Time: {{event.time}}</div>
+    <div>Price: {{event.price}}</div>
+    <div>
+      <span>Location: {{event.location.address}}</span>
+      <span>&nbsp;</span>
+      <span>{{event.location.city}}, {{event.location.country}}</span>
+    </div>
+  </md-card-content>
+
+  <md-card-footer>
     <button md-raised-button color="accent" (click)="handleClickMe()">Testing</button>
-  </div>
+  </md-card-footer>
 </md-card>
