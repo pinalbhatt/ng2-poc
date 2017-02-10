@@ -9,7 +9,7 @@ export class EventThumbnailComponent implements OnInit {
 
   @Input() event: any;
   @Output() eventClick = new EventEmitter();
-  x = 10;
+  public x = 10;
   someChildProp: any = 'value in child';
 
   constructor() { }

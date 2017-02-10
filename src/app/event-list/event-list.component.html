@@ -1,13 +1,20 @@
 <div>
   <h1>Upcoming Angular 2 Events</h1>
   <hr>
-  <poc-event-thumbnail #thumbnail [event]="event1" (eventClick)="handleEventClicked($event)"></poc-event-thumbnail>
-  <div>
-    <div>a{{thumbnail.x}}b</div>
-    <button md-raised-button color="warn" (click)="thumbnail.logFoo()">Access Child components event {{thumbnail.x}}</button>
-    <br/>
-    <div>a{{thumbnail.x}}b</div>
-  </div>
+  <md-grid-list cols="2" >
+    <md-grid-tile *ngFor="let event of events">
+      <poc-event-thumbnail  #thumbnail  [event]="event" (eventClick)="handleEventClicked($event)"></poc-event-thumbnail>
+      <div>
+        <div>a{{thumbnail.x}}b</div>
+        <button md-raised-button color="warn" (click)="thumbnail.logFoo()">Access Child components event {{thumbnail.x}}</button>
+        <br/>
+        <div>a{{thumbnail.x}}b</div>
+      </div>
+    </md-grid-tile>
+
+  </md-grid-list>
+
+
 
 
 </div>

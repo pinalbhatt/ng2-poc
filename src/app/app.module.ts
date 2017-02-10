@@ -11,13 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     EventListComponent,
-    EventThumbnailComponent
+    EventThumbnailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
